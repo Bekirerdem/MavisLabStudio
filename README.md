@@ -23,3 +23,27 @@ Bu proje aşağıdaki güçlü teknolojiler üzerine inşa edilmiştir:
 - **Dinamik Animasyonlar:** GSAP ve Framer Motion ile zenginleştirilmiş etkileşimler.
 - **Yapay Zeka Destekli İçerik:** Google Generative AI entegrasyonu.
 - **Optimize Edilmiş Performans:** Next.js'in sunduğu en iyi pratikler ve optimizasyonlar.
+
+## 🚀 Kurulum ve Başlangıç
+
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+
+1. **Repoyu klonlayın:**
+   ```bash
+   git clone https://github.com/Bekirerdem/MavisLabStudio.git
+   cd MavisLabStudio
+   ```
+
+2. **Bağımlılıkları yükleyin:**
+   ```bash
+   npm install
+   # veya
+   yarn install
+   ```
+
+3. **Geliştirme sunucusunu başlatın:**
+   ```bash
+   npm run dev
+   ```
+
+4. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine gidin.
