@@ -15,3 +15,11 @@ Bu proje aşağıdaki güçlü teknolojiler üzerine inşa edilmiştir:
   - [Lenis](https://lenis.studiofreight.com/) (Pürüzsüz kaydırma)
 - **Veritabanı & Backend:** [Supabase](https://supabase.com/)
 - **AI Entegrasyonu:** [Google Generative AI](https://ai.google.dev/)
+
+## ✨ Özellikler
+
+- **Modern ve Duyarlı Tasarım:** Her cihazda kusursuz görünen arayüzler.
+- **Pürüzsüz Kaydırma (Smooth Scrolling):** Lenis entegrasyonu ile akıcı bir gezinti deneyimi.
+- **Dinamik Animasyonlar:** GSAP ve Framer Motion ile zenginleştirilmiş etkileşimler.
+- **Yapay Zeka Destekli İçerik:** Google Generative AI entegrasyonu.
+- **Optimize Edilmiş Performans:** Next.js'in sunduğu en iyi pratikler ve optimizasyonlar.
