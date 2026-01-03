@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mavis-gold: #D4AF37;
+  --mavis-black: #0A0A0A;
+  --mavis-gray: #1A1A1A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--mavis-black);
+  color: #ffffff;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mavis-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mavis-gold);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c4a030;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Video background utilities */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.5) 0%,
+    rgba(10, 10, 10, 0.7) 50%,
+    rgba(10, 10, 10, 0.9) 100%
+  );
+  z-index: -1;
+}
+
+/* Gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5E6A3 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Premium button styles */
+.btn-premium {
+  @apply px-6 py-3 rounded-full font-medium transition-all duration-300;
+  @apply bg-mavis-gold text-mavis-black;
+  @apply hover:shadow-lg hover:shadow-mavis-gold/30;
+  @apply hover:scale-105 active:scale-95;
+}
+
+.btn-outline {
+  @apply px-6 py-3 rounded-full font-medium transition-all duration-300;
+  @apply border border-mavis-gold/50 text-mavis-gold;
+  @apply hover:bg-mavis-gold/10 hover:border-mavis-gold;
+}
+
+/* Chat message styles */
+.chat-message {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.chat-message a {
+  word-break: break-all;
+}
+
+/* Hide scrollbar for chat but allow scrolling */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.2);
+  border-radius: 2px;
+}

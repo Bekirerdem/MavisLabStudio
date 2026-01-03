@@ -1,56 +1,110 @@
-# Mavis Lab Studio
+# Mavis Studio
 
-Mavis Lab Studio, modern web teknolojileri kullanılarak geliştirilmiş, yüksek performanslı ve estetik açıdan zengin bir dijital deneyim platformudur. Yaratıcı tasarımları güçlü altyapı ile birleştirerek benzersiz kullanıcı deneyimleri sunar.
+![Mavis Studio Banner](https://via.placeholder.com/1200x400/050505/ffffff?text=MAVIS+STUDIO)
 
-## 🛠 Teknoloji Yığını
+> **"Geleceğin Dijital Deneyimi"**
 
-Bu proje aşağıdaki güçlü teknolojiler üzerine inşa edilmiştir:
+Mavis Studio, estetik ve teknolojinin sınırlarını zorlayan, yüksek performanslı web deneyimleri sunan bir **Avant-Garde Dijital Ajans** projesidir. Minimalist tasarım, akıcı animasyonlar ve yapay zeka entegrasyonu ile web'in standartlarını yeniden tanımlıyoruz.
 
-- **Framework:** [Next.js 14](https://nextjs.org/)
-- **Dil:** [TypeScript](https://www.typescriptlang.org/)
-- **Stil:** [Tailwind CSS](https://tailwindcss.com/)
-- **Animasyon:**
-  - [GSAP](https://greensock.com/gsap/) (Gelişmiş animasyonlar)
-  - [Framer Motion](https://www.framer.com/motion/) (React komponent animasyonları)
-  - [Lenis](https://lenis.studiofreight.com/) (Pürüzsüz kaydırma)
-- **Veritabanı & Backend:** [Supabase](https://supabase.com/)
-- **AI Entegrasyonu:** [Google Generative AI](https://ai.google.dev/)
+---
 
-## ✨ Özellikler
+## 💎 Proje Vizyonu
 
-- **Modern ve Duyarlı Tasarım:** Her cihazda kusursuz görünen arayüzler.
-- **Pürüzsüz Kaydırma (Smooth Scrolling):** Lenis entegrasyonu ile akıcı bir gezinti deneyimi.
-- **Dinamik Animasyonlar:** GSAP ve Framer Motion ile zenginleştirilmiş etkileşimler.
-- **Yapay Zeka Destekli İçerik:** Google Generative AI entegrasyonu.
-- **Optimize Edilmiş Performans:** Next.js'in sunduğu en iyi pratikler ve optimizasyonlar.
+Bu proje, sadece bir web sitesi değil, yaşayan bir dijital organizma olarak tasarlanmıştır. Kullanıcı etkileşimlerine duyarlı, görsel olarak büyüleyici ve teknik olarak kusursuz bir yapı hedeflenmiştir.
 
-## 🚀 Kurulum ve Başlangıç
+### Temel Tasarım İlkeleri
+- **Deep Void Estetiği:** Derin siyahlar, neon aksanlar ve negatif alanın güçlü kullanımı.
+- **Micro-Interactions:** Her tıklama ve kaydırma hareketine anlam katan detaylı etkileşimler.
+- **Fluid Motion:** Fizik tabanlı, su gibi akan doğal animasyonlar.
 
-Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+---
 
-1. **Repoyu klonlayın:**
+## 🛠️ Teknoloji Mimarisi
+
+Mavis Studio, endüstrinin en güçlü ve modern araçları kullanılarak inşa edilmiştir.
+
+### Core
+| Teknoloji | Amaç |
+|-----------|------|
+| **Next.js 14** | App Router mimarisi ile ultra-hızlı SSR ve SEO optimizasyonu. |
+| **TypeScript** | Tip güvenliği ve ölçeklenebilir kod tabanı. |
+| **Tailwind CSS** | Hızlı, tutarlı ve modern stilizasyon sistemi. |
+
+### Görsel & Animasyon
+| Kütüphane | Kullanım Alanı |
+|-----------|----------------|
+| **GSAP (GreenSock)** | Karmaşık timeline animasyonları ve ScrollTrigger efektleri. |
+| **Framer Motion** | React komponentleri için layout animasyonları. |
+| **Lenis** | Premium hissettiren pürüzsüz kaydırma (smooth scroll) deneyimi. |
+| **React Icons** | Hafif ve vektörel ikon setleri. |
+
+### Backend & AI
+| Servis | İşlev |
+|--------|-------|
+| **Supabase** | Gerçek zamanlı veritabanı ve güvenli backend altyapısı. |
+| **Google Gemini AI** | Dinamik içerik üretimi ve akıllı asistan entegrasyonu. |
+
+---
+
+## 🚀 Kurulum
+
+Projeyi yerel ortamınızda geliştirmek için aşağıdaki adımları izleyin.
+
+### Gereksinimler
+- Node.js 18+
+- npm veya yarn
+
+### Adım Adım Başlangıç
+
+1. **Repoyu Klonlayın**
    ```bash
    git clone https://github.com/Bekirerdem/MavisLabStudio.git
    cd MavisLabStudio
    ```
 
-2. **Bağımlılıkları yükleyin:**
+2. **Bağımlılıkları Yükleyin**
    ```bash
    npm install
-   # veya
-   yarn install
    ```
 
-3. **Geliştirme sunucusunu başlatın:**
+3. **Çevre Değişkenlerini Ayarlayın**
+   `.env.local` dosyasını oluşturun ve gerekli API anahtarlarını ekleyin:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+   GEMINI_API_KEY=your_key
+   ```
+
+4. **Geliştirme Sunucusunu Başlatın**
    ```bash
    npm run dev
    ```
-
-4. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine gidin.
-
-## 📄 Lisans
-
-Bu proje özel mülkiyettir. Tüm hakları saklıdır.
+   Tarayıcınızda `http://localhost:3000` adresini açın.
 
 ---
-Developed by **Mavis Lab Studio Team**
+
+## 📂 Proje Yapısı
+
+```
+src/
+├── app/              # Next.js App Router sayfaları
+├── components/       # Yeniden kullanılabilir UI bileşenleri
+│   ├── ui/           # Temel buton, input vb. elementler
+│   └── effects/      # Özel animasyon ve efekt bileşenleri
+├── hooks/            # Özel React hook'ları (useScroll, useWindowSize vb.)
+├── lib/              # Yardımcı fonksiyonlar ve API istemcileri
+└── styles/           # Global stil dosyaları ve Tailwind konfigürasyonu
+```
+
+---
+
+## 📞 İletişim
+
+Proje hakkında detaylı bilgi veya işbirliği için:
+
+**Web:** [mavis.studio](https://mavis.studio)  
+**GitHub:** [@Bekirerdem](https://github.com/Bekirerdem)
+
+---
+
+Developed with 🖤 by **Mavis Studio Team**
