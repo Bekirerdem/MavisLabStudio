@@ -47,3 +47,10 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
    ```
 
 4. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine gidin.
+
+## 📄 Lisans
+
+Bu proje özel mülkiyettir. Tüm hakları saklıdır.
+
+---
+Developed by **Mavis Lab Studio Team**
